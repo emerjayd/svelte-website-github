@@ -1,4 +1,4 @@
-name: Deploy Java Application and SQL Database
+name: Deploy Svelte app
 
 on:
   push:
