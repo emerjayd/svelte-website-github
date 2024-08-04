@@ -1,0 +1,25 @@
+- hosts: webservers
+  become: true
+  tasks:
+    - name: Update apt repo and cache
+      apt:
+        update_cache: true
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Pull Docker image
+      docker_image:
+        name: emerjayd/svelte-website
+        tag: latest
+        source: pull
+
+    - name: Run Docker container
+      docker_container:
+        name: svelte-app
+        image: emerjayd/svelte-website:latest
+        state: started
+        ports:
+          - "8080:8080"

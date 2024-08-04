@@ -1,0 +1,27 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js",
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/cloud": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/contact": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/functions": [
+		"src/routes/functions/+server.ts"
+	],
+	"/security": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	],
+	"/software": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.server.js"
+	]
+}
